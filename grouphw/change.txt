@@ -1,0 +1,10 @@
+temperatures celsius 0 converted to fahrenheit is 32
+temperatures celsius 0 converted to fahrenheit is 33.8
+temperatures celsius 0 converted to fahrenheit is 35.6
+temperatures celsius 0 converted to fahrenheit is 37.4
+temperatures celsius 0 converted to fahrenheit is 39.2
+temperatures celsius 0 converted to fahrenheit is 41
+temperatures celsius 0 converted to fahrenheit is 42.8
+temperatures celsius 0 converted to fahrenheit is 42.8
+temperatures celsius 0 converted to fahrenheit is 44.6
+temperatures celsius 0 converted to fahrenheit is 46.4
