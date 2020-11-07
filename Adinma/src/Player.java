@@ -1,10 +1,13 @@
 package src;
-//
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
-import java.util.Map.Entry;
+/*
+ * THE LOST RUINS OF ARNAK
+ * This is the player class for the Games.
+ * Contained in this class are the 
+ * components which a player uses to play the game.
+ * 
+ */
+import java.util.*;
+
 
 public class Player {
 	
@@ -30,9 +33,10 @@ public class Player {
 	int gold;
 	int worker;
 	int tablets;
-	int arrowheads;
+	int arrowHeads;
 	int jewels;
 	int coin;
+	boolean myTurn;
 	
 	public List<Cards> deck; // players cards in hand
 	
@@ -51,14 +55,81 @@ public class Player {
 		gold = 0;
 		worker = 0;
 		tablets = 0;
-		arrowheads = 0;
+		arrowHeads = 0;
 		jewels = 0;
 		coin = 0;
+		myTurn = false;
 	}
 		//This method assigns the inital 6 cards to the deck
+		//Yet to make cards class
 		public void populateDeck() {
 			
 		}
+		
+		//Setters for class variables
+		 public void setSteamBoat(int steamBoat) {
+			    this.steamBoat = steamBoat;
+			  }
+		 public void setJeep(int jeep) {
+			    this.jeep = jeep;
+			  }
+		 public void setAssistants(int assistants) {
+			    this.assistants = assistants;
+			  }
+		 public void setCompass(int compass) {
+			    this.compass = compass;
+			  }
+		 public void setGold(int gold) {
+			    this.gold = gold;
+			  }
+		 public void setWorker(int worker) {
+			    this.worker = worker;
+			  }
+		 public void setTablets(int tablets) {
+			    this.tablets = tablets;
+			  }
+		 public void setFArrowheads(int arrowHeads) {
+			    this.arrowHeads = arrowHeads;
+			  }
+		 public void setJewels(int jewels) {
+			    this.jewels = jewels;
+			  }
+		 public void setCoin(int coin) {
+			    this.coin = coin;
+			  }
+		 
+		 
+		 //Getters for class variables
+		 public int getSteamBoat() {
+			    return steamBoat;
+			  }
+		 public int getJeep() {
+			    return jeep;
+			  }
+		 public int getAssistants() {
+			    return assistants;
+			  }
+		 public int getCompass() {
+			    return compass;
+			  }
+		 public int getGold() {
+			    return gold;
+			  }
+		 public int getWorker() {
+			    return worker;
+			  }
+		 public int getTablets() {
+			    return tablets;
+			  }
+		 public int getArrowHeads() {
+			    return arrowHeads;
+			  }
+		 public int getJewels() {
+			    return jewels;
+			  }
+		 public int getCoin() {
+			    return coin;
+			  }		
 		
 		public void displayPlayerDash() {
 			System.out.println("You have " + deck.toString() + "cards");
@@ -71,6 +142,7 @@ public class Player {
 			System.out.println("You have " + arrowheads + " Arrowheads");
 			System.out.println("You have " + jewels + " Jewels");
 			System.out.println("You have " + coin + " Coins");
+			System.out.println("You have " + compass + " Compass");
 			
 			
 		}
